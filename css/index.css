@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-.attribution { 
+footer { 
     font-size: 11px; 
     text-align: center; 
 }
-.attribution a { 
+footer a { 
     color: hsl(228, 45%, 44%); 
 }
 body { 
-    width: 100%; 
+    margin: 0;
     background-color: hsl(212, 45%, 89%); 
+    width: 100%;
 }
-.outer-div { 
+main { 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
 .container {
     background-color: hsl(0, 0%, 100%);
     width: 310px;
     border-radius: 17px;
     box-shadow: 5px 5px 10px hsl(211, 47%, 78%);
+    height: 480px;
 }
 
 .content {
@@ -31,25 +35,30 @@ body {
 }
 
 .content img {
-    width: 270px;
+    max-width: 100%;
     border-radius: 10px;
+    height: 270px;
     margin-top: 15px;
+    border-radius: 15px;
 }
-.content h3 {
+.content h1 {
     color: hsl(218, 44%, 22%);
     font-family: 'Outfit', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 30px 0 50px;
+    font-size: 18px;
+    text-align: center;
+    width: 250px;
 }
 
 .content p {
     color: hsl(220, 15%, 55%);
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
-    margin: 20px 25px 0 20px;
     text-align: center;
     font-size: 15px;
     padding-bottom: 45px;
+    width: 250px;
+   
 }
